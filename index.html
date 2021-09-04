@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Contacts</title>
+
+    <!-- Link Style -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Jqyery Cnd -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <header>
+        <div class="buttons-header">
+            <button> <i class="fas fa-chevron-left"></i> Back</button>
+            <input placeholder="Search" type="text">
+        </div>
+
+        <div class="logo">
+            <h3>Logo</h3>
+        </div>
+
+        <div class="user">
+            <span class="name-user">Yuri Jesus</span>
+            <div class="img-user">YJ</div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="buttons-conact">
+            <button id="new-button"><i class="fas fa-plus"></i> New</button>
+        </div>
+        <div class="title-contact">
+            <h2><span>Contacts</span></h2>
+        </div>
+
+        <div class="contacts-box">
+            <span class="span-contacts"></span>
+        </div>
+    </section>
+
+    <section class="newContainer">
+        <section class="exit">
+            <button class="exit-button"><i class="fas fa-times"></i></button>
+        </section>
+        <div class="title">
+            <h2>New Contact</h2>
+        </div>
+        
+        <div class="input-new-container">       
+                <input placeholder="First Name" required id="first-name" type="text">
+                <input placeholder="Last Name" required id="last-name" type="text">
+                <input placeholder="Email" required id="email" type="email">
+                
+                <button onclick="adicionarContact()" class="add-contact">Add Contact</button>
+ 
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+    <script src="newContact.js"></script>
+</body>
+</html>
