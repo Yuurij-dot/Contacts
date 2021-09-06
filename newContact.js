@@ -50,6 +50,13 @@ function adicionarContact(e){
         removeContact.classList.add('fas')
         removeContact.classList.add('fa-times')
         buttonRemove.classList.add('remover-contatos')
+        buttonRemove.onclick = function (){
+            const node = document.querySelector('.contact');
+            // contactBox.removeChild()
+            if (node.parentNode) {
+                node.parentNode.removeChild(node);
+              }
+        }
         imgContact.classList.add('img-contact')
         infomationsContact.classList.add('infomations-contact')
         nameContact.classList.add('name-contact')
@@ -72,15 +79,9 @@ function adicionarContact(e){
 
         $('.newContainer').toggleClass('newActive');
         
-        verificaChildren()
-        $('.remover-contatos').click(function () {
-            contactBox.removeChild();
-        })
-                
-    }  
+        verificaChildren()                
+    } 
 }
-
-// Terminar o remove contats
 
 // Fazer o search
 
