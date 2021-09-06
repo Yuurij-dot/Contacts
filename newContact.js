@@ -56,7 +56,7 @@ function adicionarContact(e){
         emailContact.classList.add('email-contact')
 
         imgContact.textContent = (firstName.value.substr(0, 1)) + (lastName.value.substr(0, 1))
-        nameContact.textContent = firstNameNew
+        nameContact.textContent = firstNameNew + ' ' + lastName
         emailContact.textContent = emailNew
         
 
@@ -81,6 +81,8 @@ function adicionarContact(e){
 }
 
 // Terminar o remove contats
+
+// Fazer o search
 
 
 
